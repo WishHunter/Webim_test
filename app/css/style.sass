@@ -1,0 +1,645 @@
+@import url(bootstrap-grid-and-reboot.min.css)
+
+@font-face
+	font-family: 'icomoon'
+	src: url('../fonts/icomoon.eot?sybea5')
+	src: url('../fonts/icomoon.eot?sybea5#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?sybea5') format('truetype'), url('../fonts/icomoon.woff?sybea5') format('woff'), url('../fonts/icomoon.svg?sybea5#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+[class^="icon-"], [class*=" icon-"] 
+	font-family: 'icomoon' !important
+	speak: none
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon-logo-telegram:before 
+	content: "\e91e"
+	color: #acafc1
+
+.icon-youtube-symbol:before 
+	content: "\e91f"
+	color: #b1b3c2
+
+.icon-fb_footer:before 
+	content: "\e920"
+	color: #acafc1
+
+.icon-vk_footer:before 
+	content: "\e921"
+	color: #acafc1
+
+.icon-footer_phone:before
+	content: "\e91d"
+	color: #50b09f
+
+.icon-01:before 
+	content: "\e900"
+	color: #363b66
+
+.icon-02:before 
+	content: "\e901"
+	color: #363b66
+
+.icon-app .path1:before 
+	content: "\e902"
+	color: rgb(151, 186, 51)
+
+.icon-app .path2:before 
+	content: "\e903"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-chatbots .path1:before 
+	content: "\e904"
+	color: rgb(106, 172, 206)
+
+.icon-chatbots .path2:before 
+	content: "\e905"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-email .path1:before 
+	content: "\e906"
+	color: rgb(114, 150, 205)
+
+.icon-email .path2:before 
+	content: "\e907"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-email .path3:before 
+	content: "\e908"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-email .path4:before 
+	content: "\e909"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-email .path5:before 
+	content: "\e90a"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-feedback:before 
+	content: "\e90b"
+	color: #dab81a
+
+.icon-msn .path1:before 
+	content: "\e90c"
+	color: rgb(61, 211, 161)
+
+.icon-msn .path2:before 
+	content: "\e90d"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-msn .path3:before 
+	content: "\e90e"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-msn .path4:before 
+	content: "\e90f"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-sn:before 
+	content: "\e910"
+	color: #3b4269
+
+.icon-step_01 .path1:before 
+	content: "\e911"
+	color: rgb(44, 211, 184)
+
+.icon-step_01 .path2:before 
+	content: "\e912"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-step_02 .path1:before 
+	content: "\e913"
+	color: rgb(44, 211, 184)
+
+.icon-step_02 .path2:before 
+	content: "\e914"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-step_03 .path1:before 
+	content: "\e915"
+	color: rgb(44, 211, 184)
+
+.icon-step_03 .path2:before 
+	content: "\e916"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-step_04 .path1:before 
+	content: "\e917"
+	color: rgb(44, 211, 184)
+
+.icon-step_04 .path2:before 
+	content: "\e918"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-step_05 .path1:before 
+	content: "\e919"
+	color: rgb(44, 211, 184)
+
+.icon-step_05 .path2:before 
+	content: "\e91a"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+.icon-step_06 .path1:before 
+	content: "\e91b"
+	color: rgb(44, 211, 184)
+
+.icon-step_06 .path2:before 
+	content: "\e91c"
+	margin-left: -1em
+	color: rgb(255, 255, 255)
+
+$color_main: #0da088
+$color_secondary: #393e6b
+
+html, body
+	font-family: 'Ubuntu', sans-serif
+
+body
+	padding-top: 90px
+
+ul.menu
+	list-style-type: none
+	padding: 0
+	margin: 0
+	display: flex
+	align-items: center
+	li
+		a 
+			padding: 10px 
+ul.list_link
+	list-style-type: none
+	padding-left: 0
+	li 
+		position: relative
+		padding-left: 40px
+		margin-bottom: 50px
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 16px
+			left: 0
+			border-radius: 50%
+			background-color: $color_secondary
+			width: 8px
+			height: 8px
+		a 
+			font-size: 24px
+			margin-bottom: 15px
+
+a
+	color: $color_main
+	transition: all .2s
+	text-decoration: underline
+	font-size: 18px
+	font-family: 'Ubuntu', sans-serif
+	&:hover
+		color: $color_secondary
+h1
+	font-size: 36px
+	color: $color_secondary
+	font-weight: bold
+	margin-bottom: 35px
+	text-transform: uppercase
+h2 
+	font-size: 30px
+	color: $color_secondary
+	font-weight: bold
+	text-transform: uppercase
+	margin-bottom: 25px
+	line-height: 1.2
+p 
+	font-size: 16px
+	color: rgb(116, 117, 123)
+	line-height: 1.5
+.bold 
+	font-weight: bold
+.btn
+	font-size: 14px
+	padding: 18px
+	font-weight: bold
+	text-transform: uppercase
+	min-width: 256px
+	border-radius: 35px
+	display: inline-block
+	text-align: center
+	vertical-align: middle
+	position: relative
+	overflow: hidden
+	text-decoration: none
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: -160%
+		bottom: -60%
+		width: 150%
+		height: 250%
+		transform: rotate(-10deg)
+		background-color: $color_secondary
+		transition: all 1s
+	span
+		position: relative
+		z-index: 1
+	&:hover
+		color: #fff
+		text-decoration: none
+	&:hover:before 
+		left: 0
+.btn_main
+	background-color: $color_main
+	color: #fff
+
+.btn_secondary
+	background-color: $color_secondary
+	color: #fff
+	&:before
+		background-color: $color_main
+
+.btn_secondary_outline
+	border: 1px solid $color_secondary
+	color: $color_secondary
+
+header
+	display: flex
+	justify-content: space-between
+	padding: 30px 70px
+	background-color: #fff
+	background-image: url('../img/header.png')
+	background-position: left center
+	background-size: contain
+	background-repeat: no-repeat
+	box-shadow: 0 3px 7px rgba(0,0,0,.2)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	z-index: 10
+	.burger
+		display: none
+	a 
+		color: $color_secondary
+		text-transform: uppercase
+		text-decoration: none
+		&:hover
+			color: $color_main
+			text-decoration: none
+	.logo
+		height: 30px
+		margin-left: 5px
+main 
+	.section_1
+		background-color: rgb(239, 244, 244)
+		padding: 80px 0 68px
+		p 
+			margin-bottom: 50px
+			padding-right: 30%
+		.btn
+			margin-right: 20px
+	.section_2
+		padding: 75px 0 80px
+		.steps
+			margin-top: 125px
+			display: flex
+			flex-wrap: wrap
+			.step
+				span
+					display: inline-block
+					font-size: 45px
+					position: relative
+					&:after
+						content: '1'
+						position: absolute
+						right: 10px
+						bottom: -30px
+						font-size: 150px
+						color: rgba(57, 62, 107, 0.149)
+						font-weight: bold
+						font-family: 'Ubuntu', sans-serif
+						line-height: 1
+				&:last-of-type
+					margin-left: 145px
+					span:after
+						content: '2'
+				a 
+					display: block
+					margin-top: 40px
+	.section_3
+		background-color: rgb(239, 244, 244)
+		padding: 85px 0 35px
+	.section_4
+		padding: 80px 0 25px
+		ul
+			margin-top: 70px
+	.section_5
+		background-color: rgb(239, 244, 244)
+		padding: 75px 0 65px
+		h2
+			margin-bottom: 15px
+		ul.steps
+			margin-top: 55px
+			margin-bottom: 75px
+			list-style-type: none
+			padding: 0
+			.step 
+				margin-bottom: 30px
+				display: flex
+				align-items: center
+				span 
+					font-size: 70px
+				p 
+					margin-left: 37px
+					font-size: 18px
+					color: $color_secondary
+					span 
+						font-size: 24px
+						font-weight: bold
+						display: inline-block
+						margin-right: 5px
+		.btn 
+			margin-right: 20px
+	.section_6
+		padding: 65px 0 75px
+		p 
+			color: $color_secondary
+		.channels
+			margin-top: 70px
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+			.channel_link
+				width: 33%
+				display: flex
+				align-items: center
+				font-size: 18px
+				margin-bottom: 45px
+				text-decoration: none
+				span.text
+					text-decoration: underline
+				.icon
+					font-size: 40px
+					display: inline-block
+					margin-right: 30px
+				img 
+					height: 40px
+					margin-right: 30px
+footer
+	background-color: $color-secondary
+	padding: 50px 0 60px
+	.container
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		p 
+			color: #c0c3d3
+		.logo_block
+			img 
+				height: 35px
+				margin-bottom: 20px
+			p 
+				font-size: 14px
+				line-height: 1.2
+		.tel_block
+			a 
+				color: #fff
+				text-decoration: none
+				font-size: 20px
+				line-height: 1
+			a:hover
+				color: $color-main
+			.address
+				line-height: 1
+				margin-bottom: 20px
+			.main_phone
+				font-size: 24px
+				margin-bottom: 15px
+				span
+					vertical-align: middle
+					font-size: 25px
+				a 
+					font-size: 24px
+					display: inline-block
+					margin-left: 10px
+					line-height: 1
+					vertical-align: middle
+		.social_block
+			a 
+				display: block
+				color: #fff
+				text-decoration: none
+				font-size: 16px
+			a:hover
+				color: $color-main
+			p 
+				margin: 20px 0
+			.social_links
+				a 
+					display: inline-block
+					font-size: 18px
+					margin-right: 15px
+					span:before
+						transition: all .2s
+				a:hover
+					span:before
+						color: $color-main
+@media screen and (max-width: 1279px)
+	header
+		background-position: -20vw center
+		padding: 30px 50px
+	main 
+		.section_2 
+			.steps
+				padding-left: 20px
+
+@media screen and (max-width: 1023px)
+	ul.list_link 
+		li 
+			a
+				font-size: 30px
+			p 
+				font-size: 24px
+	header
+		background: none
+		background-color: #fff
+		justify-content: center
+		flex-direction: column
+		top: 0
+		transform: translateY(calc(-100% + 120px))
+		transition: all .5s
+		ul.menu
+			flex-direction: column
+			li 
+				padding: 20px 10px
+				a 
+					font-size: 25px
+			&:last-of-type
+				li:last-of-type
+					padding-bottom: 0
+		.logo
+			height: 60px
+		.burger
+			display: block
+			position: absolute
+			left: 30px
+			bottom: 50px
+			transition: all .5s
+			span, span:before, span:after 
+				display: block
+				background-color: $color_main
+				width: 55px
+				height: 5px
+				transition: all .5s
+			span:before
+				content: ''
+				position: absolute
+				left: 0
+				top: -15px
+			span:after 
+				content: ''
+				position: absolute
+				left: 0
+				bottom: -15px
+	header.open_menu
+		transform: none
+		.burger
+			left: calc(100% - 85px)
+			bottom: calc(100% - 55px)
+			span
+				background-color: transparent
+			span:before
+				transform: rotate(45deg)
+				top: 0
+			span:after
+				transform: rotate(-45deg)
+				bottom: 0
+	a 
+		font-size: 26px
+	h1, h2
+		font-size: 48px
+	p
+		font-size: 26px
+	.btn
+		width: 100%
+		margin-bottom: 32px
+		font-size: 24px
+		padding: 30px 20px
+		border-radius: 55px
+	main 
+		.section_1 
+			p
+				padding-right: 0
+		.section_2 
+			.steps 
+				padding-left: 35px
+				.step 
+					span
+						font-size: 65px
+						&:after
+							right: 30px
+		.section_5 
+			ul.steps 
+				.step 
+					span
+						font-size: 100px
+					p
+						font-size: 24px
+		.section_6 
+			.channels 
+				.channel_link
+					width: 100%
+					font-size: 24px
+					.icon
+						font-size: 65px
+					img 
+						height: 65px
+	footer 
+		.container 
+			.social_block, .tel_block
+				display: none
+			.logo_block 
+				a 
+					display: none
+				p 
+					font-size: 24px
+
+@media screen and (max-width: 576px)
+	h1, h2
+		font-size: 32px
+	p 
+		font-size: 22px
+	.btn
+		font-size: 20px
+	ul.list_link
+		text-align: left
+		li 
+			a
+				font-size: 25px
+			p 
+				font-size: 20px
+	header
+		transform: translateY(calc(-100% + 90px)) 
+		.burger
+			bottom: 45px 
+			span, span:before, span:after
+				width: 45px
+		.logo
+			height: 30px
+	main
+		text-align: center
+		.section_1 
+			.btn
+				margin-right: 0
+		.section_2 
+			text-align: center
+			.steps
+				padding-left: 0
+				flex-direction: column
+				.step
+					display: block
+				.step:last-of-type
+					margin-left: 0
+					margin-top: 50px
+		.section_5 
+			ul.steps
+				text-align: left 
+				.step 
+					span
+						font-size: 80px
+					p 
+						font-size: 20px
+						margin-left: 15px
+			.btn
+				margin-right: 0
+		.section_6 
+			.channels
+				text-align: left
+				.channel_link
+					font-size: 20px
+	footer 
+		.container 
+			.logo_block 
+				p
+					font-size: 18px
